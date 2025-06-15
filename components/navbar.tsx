@@ -20,14 +20,13 @@ export function Navbar() {
           <Link href="/process" className="text-foreground/80 hover:text-primary transition-colors">
             Process
           </Link>
+          {/* Team section temporarily hidden
           <Link href="/team" className="text-foreground/80 hover:text-primary transition-colors">
             Team
           </Link>
-          <Link href="/contact" className="text-foreground/80 hover:text-primary transition-colors">
-            Contact us
-          </Link>
+          */}
           <Button asChild>
-            <Link href="/contact">Signup</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
 
@@ -48,6 +47,7 @@ export function Navbar() {
             >
               Process
             </Link>
+            {/* Team section temporarily hidden
             <Link
               href="/team"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
@@ -55,16 +55,10 @@ export function Navbar() {
             >
               Team
             </Link>
-            <Link
-              href="/contact"
-              className="text-foreground/80 hover:text-primary transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact us
-            </Link>
+            */}
             <Button asChild className="w-full">
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                Signup
+                Contact Us
               </Link>
             </Button>
           </div>

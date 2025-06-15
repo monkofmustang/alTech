@@ -87,12 +87,25 @@ export default function Contact() {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Our Location</h4>
-                      <p className="text-foreground/80">
-                        Thamel, Kathmandu
-                        <br />
-                        Nepal
-                      </p>
+                      <h4 className="font-semibold mb-1">Our Locations</h4>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-medium">India Office</p>
+                          <p className="text-foreground/80">
+                            KR Pura, Bangalore
+                            <br />
+                            Karnataka, India
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Nepal Office</p>
+                          <p className="text-foreground/80">
+                            Shantichowk, Biratnagar
+                            <br />
+                            Nepal
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -103,8 +116,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold mb-1">Email Us</h4>
                       <p className="text-foreground/80">
-                        <a href="mailto:info@altentech.com" className="hover:text-primary transition-colors">
-                          info@altentech.com
+                        <a href="mailto:bytebrewery128@gmail.com" className="hover:text-primary transition-colors">
+                          bytebrewery128@gmail.com
                         </a>
                       </p>
                     </div>
@@ -116,11 +129,28 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Call Us</h4>
-                      <p className="text-foreground/80">
-                        <a href="tel:+9779812345678" className="hover:text-primary transition-colors">
-                          +977 9812345678
-                        </a>
-                      </p>
+                      <div className="space-y-2">
+                        <div>
+                          <p className="font-medium">India</p>
+                          <p className="text-foreground/80">
+                            <a href="tel:+916360758182" className="hover:text-primary transition-colors">
+                              +91 6360758182
+                            </a>
+                            <br />
+                            <a href="tel:+918217308815" className="hover:text-primary transition-colors">
+                              +91 8217308815
+                            </a>
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Nepal</p>
+                          <p className="text-foreground/80">
+                            <a href="tel:+9779804397120" className="hover:text-primary transition-colors">
+                              +977 9804397120
+                            </a>
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
