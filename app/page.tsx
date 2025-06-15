@@ -339,6 +339,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partners & Projects Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Partners & Projects</h2>
+            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+              Discover our innovative solutions and successful partnerships that are shaping the future of AI.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-on-scroll">
+            <div className="bg-background p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-all hover:shadow-lg group">
+              <div className="flex items-start mb-6">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 group-hover:animate-pulse">
+                  <Globe className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-display font-bold gradient-text mb-2">Algen.ai</h3>
+                  <p className="text-foreground/80 mb-4">
+                    Our flagship AI platform that's revolutionizing how businesses leverage artificial intelligence.
+                  </p>
+                  <Button asChild variant="outline" size="sm" className="hover:bg-primary/10 transition-colors">
+                    <a href="https://algen.ai/" target="_blank" rel="noopener noreferrer">
+                      Visit Platform <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-background p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-all hover:shadow-lg group">
+              <div className="flex items-start mb-6">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0 group-hover:animate-pulse">
+                  <Cpu className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2"><span className="text-brand-teal">Marv</span>AI</h3>
+                  <p className="text-foreground/80 mb-4">
+                    An advanced AI solution that's transforming how organizations interact with artificial intelligence.
+                  </p>
+                  <Button asChild variant="outline" size="sm" className="hover:bg-primary/10 transition-colors">
+                    <a href="https://marvai.algen.ai/" target="_blank" rel="noopener noreferrer">
+                      Visit Platform <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
