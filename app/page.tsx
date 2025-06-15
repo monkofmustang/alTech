@@ -294,9 +294,9 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Intelligent QA</h3>
+                    <h3 className="text-xl font-semibold mb-2">Quality Assurance</h3>
                     <p className="text-foreground/80">
-                      Our AI testing suite identifies issues before they become problems.
+                      AI-powered testing and code review ensure high-quality, bug-free software.
                     </p>
                   </div>
                 </div>
@@ -311,9 +311,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative animate-on-scroll">
-              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center animate-float">
-                <Code className="h-32 w-32 text-primary/60" />
+            <div className="relative">
+              <div className="aspect-[4/3] bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center animate-float">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover rounded-2xl"
+                >
+                  <source src="/Website_Animation_Video_Generated.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg animate-float animation-delay-500">
                 <div className="flex items-center space-x-4">

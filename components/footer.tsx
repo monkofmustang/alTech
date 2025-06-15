@@ -20,11 +20,13 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
+              {/* Team section temporarily hidden
               <li>
                 <Link href="/team" className="text-muted-foreground hover:text-primary transition-colors">
                   Our Team
                 </Link>
               </li>
+              */}
               <li>
                 <Link href="/careers" className="text-muted-foreground hover:text-primary transition-colors">
                   Careers
@@ -78,14 +80,40 @@ export function Footer() {
 
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <address className="not-italic text-muted-foreground">
-              <p>Kathmandu, Nepal</p>
+            <div className="space-y-4">
+              <div>
+                <h5 className="font-medium mb-2">India Office</h5>
+                <address className="not-italic text-muted-foreground">
+                  <p>KR Pura, Bangalore</p>
+                  <p className="mt-1">
+                    <a href="tel:+916360758182" className="hover:text-primary transition-colors">
+                      +91 6360758182
+                    </a>
+                  </p>
+                  <p>
+                    <a href="tel:+918217308815" className="hover:text-primary transition-colors">
+                      +91 8217308815
+                    </a>
+                  </p>
+                </address>
+              </div>
+              <div>
+                <h5 className="font-medium mb-2">Nepal Office</h5>
+                <address className="not-italic text-muted-foreground">
+                  <p>Shantichowk, Biratnagar</p>
+                  <p className="mt-1">
+                    <a href="tel:+9779804397120" className="hover:text-primary transition-colors">
+                      +977 9804397120
+                    </a>
+                  </p>
+                </address>
+              </div>
               <p className="mt-2">
-                <a href="mailto:info@algentech.com" className="hover:text-primary transition-colors">
-                  info@algentech.com
+                <a href="mailto:bytebrewery128@gmail.com" className="hover:text-primary transition-colors">
+                  bytebrewery128@gmail.com
                 </a>
               </p>
-            </address>
+            </div>
           </div>
         </div>
 
