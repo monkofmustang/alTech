@@ -2,8 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { ContactForm } from "@/components/contact-form"
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
 
 export default function Contact() {
@@ -34,47 +33,7 @@ export default function Contact() {
                 Fill out the form and our team will get back to you within 24 hours.
               </p>
 
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium mb-2">
-                      First Name
-                    </label>
-                    <Input id="firstName" placeholder="John" required />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium mb-2">
-                      Last Name
-                    </label>
-                    <Input id="lastName" placeholder="Doe" required />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <Input id="email" type="email" placeholder="john@example.com" required />
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium mb-2">
-                    Company
-                  </label>
-                  <Input id="company" placeholder="Your Company" />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <Textarea id="message" placeholder="Tell us about your project..." rows={5} required />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full">
-                  Send Message <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             <div>
