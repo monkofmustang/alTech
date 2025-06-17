@@ -27,11 +27,13 @@ export function Footer() {
                 </Link>
               </li>
               */}
+              {/* Careers section temporarily hidden
               <li>
                 <Link href="/careers" className="text-muted-foreground hover:text-primary transition-colors">
                   Careers
                 </Link>
               </li>
+              */}
             </ul>
           </div>
 

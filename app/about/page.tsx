@@ -44,8 +44,17 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-video bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <Building className="h-32 w-32 text-primary/60" />
+              <div className="aspect-video bg-background rounded-2xl overflow-hidden border border-border/20">
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/video_ready_link_provided.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div className="absolute -bottom-8 -left-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg">
                 <div className="flex items-center space-x-4">
