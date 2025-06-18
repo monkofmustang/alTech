@@ -20,9 +20,11 @@ export function Navbar() {
           <Link href="/process" className="text-foreground/80 hover:text-primary transition-colors">
             Process
           </Link>
+          {/* Careers section temporarily hidden
           <Link href="/careers" className="text-foreground/80 hover:text-primary transition-colors">
             Careers
           </Link>
+          */}
           {/* Team section temporarily hidden
           <Link href="/team" className="text-foreground/80 hover:text-primary transition-colors">
             Team
@@ -50,6 +52,7 @@ export function Navbar() {
             >
               Process
             </Link>
+            {/* Careers section temporarily hidden
             <Link
               href="/careers"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
@@ -57,6 +60,7 @@ export function Navbar() {
             >
               Careers
             </Link>
+            */}
             {/* Team section temporarily hidden
             <Link
               href="/team"

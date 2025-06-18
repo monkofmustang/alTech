@@ -52,7 +52,7 @@ export default function About() {
                   loop
                   playsInline
                 >
-                  <source src="/video_ready_link_provided.mp4" type="video/mp4" />
+                  <source src="/Video_Ready_Link_Provided.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
