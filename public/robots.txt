@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://algentech.com.np/sitemap.xml 
