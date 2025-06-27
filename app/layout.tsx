@@ -41,6 +41,13 @@ export default function RootLayout({
           "logo": "https://algentech.com.np/placeholder-logo.png",
           "description": "Turn ideas into world-class software with AI-powered development. Prototypes ready in 90 hours."
         }) }} />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" href="public\apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="public\favicon.ico" />
+        <link rel="icon" type="image/png" href="public\android-chrome-512x512.png" /> 
+        <link rel="icon" type="image/png" href="public\android-chrome-192x192.png" /> 
+        
       </Head>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
