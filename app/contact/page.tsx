@@ -75,8 +75,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold mb-1">Email Us</h4>
                       <p className="text-foreground/80">
-                        <a href="mailto:bytebrewery128@gmail.com" className="hover:text-primary transition-colors">
-                          bytebrewery128@gmail.com
+                        <a href="mailto:info@algentech.com.np" className="hover:text-primary transition-colors">
+                          info@algentech.com.np
                         </a>
                       </p>
                     </div>
