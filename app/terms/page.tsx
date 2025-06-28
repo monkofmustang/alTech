@@ -143,8 +143,8 @@ export default function Terms() {
                 <h2 className="text-2xl font-bold mb-4 text-primary">12. Contact Information</h2>
                 <p className="text-foreground/80">
                   If you have any questions about these Terms of Service, please contact us at{" "}
-                  <a href="mailto:bytebrewery128@gmail.com" className="text-primary hover:underline">
-                    bytebrewery128@gmail.com
+                  <a href="mailto:info@algentech.com.np" className="text-primary hover:underline">
+                    info@algentech.com.np
                   </a>
                 </p>
               </div>
