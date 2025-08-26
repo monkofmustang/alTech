@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer"
 import { ArrowRight, Clock, Globe, Cpu, Zap, Code, CheckCircle, Shield } from "lucide-react"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { BadgeCheck, Star, Trophy, Users2 } from "lucide-react"
+import { TypingEffect } from "@/components/typing-effect"
 
 export default function Home() {
   const router = useRouter()
@@ -54,10 +55,11 @@ export default function Home() {
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-on-scroll" ref={heroRef}>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">From Concept to MVP in Record Time.</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              <TypingEffect text="Simplify Tech. Amplifying Business." speed={60} />
+            </h1>
             <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300">
-              Supercharge your startup with AI-powered development that delivers market-ready products when you need
-              them most.
+              Supercharge your business with AI-powered consulting and software solutions.
             </p>
             <Button
               asChild

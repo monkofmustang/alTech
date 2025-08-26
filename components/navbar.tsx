@@ -4,6 +4,12 @@ import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem
+} from "@/components/ui/dropdown-menu"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,6 +26,28 @@ export function Navbar() {
           <Link href="/process" className="text-foreground/80 hover:text-primary transition-colors">
             Process
           </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <span className="text-foreground/80 hover:text-primary transition-colors cursor-pointer select-none">Services</span>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start">
+            <DropdownMenuItem asChild>
+                <Link href="/services/ai-consulting"> Software Consulting</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/services/ai-development">AI Development</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/services/rapid-prototyping">Rapid Prototyping</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/services/custom-software">Custom Software</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/comparison">Why Choose Us</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           {/* Careers section temporarily hidden
           <Link href="/careers" className="text-foreground/80 hover:text-primary transition-colors">
             Careers
@@ -52,6 +80,28 @@ export function Navbar() {
             >
               Process
             </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <span className="text-foreground/80 hover:text-primary transition-colors cursor-pointer select-none py-2" onClick={() => setIsMenuOpen(false)}>Services</span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start">
+                <DropdownMenuItem asChild>
+                  <Link href="/services/ai-development" onClick={() => setIsMenuOpen(false)}>AI Development</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/services/ai-consulting" onClick={() => setIsMenuOpen(false)}>AI Consulting</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/services/rapid-prototyping" onClick={() => setIsMenuOpen(false)}>Rapid Prototyping</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/services/custom-software" onClick={() => setIsMenuOpen(false)}>Custom Software</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/comparison" onClick={() => setIsMenuOpen(false)}>Why Choose Us</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             {/* Careers section temporarily hidden
             <Link
               href="/careers"

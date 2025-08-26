@@ -55,6 +55,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-y: scroll !important;
   }
 }
 
@@ -229,4 +230,8 @@
 /* Custom Selection */
 ::selection {
   @apply bg-sky-400/20 text-sky-500;
+}
+
+html {
+  overflow-y: scroll;
 }
