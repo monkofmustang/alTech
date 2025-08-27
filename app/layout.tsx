@@ -10,7 +10,14 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "ALGENTECH | AI-Powered Software Development",
   description: "Turn ideas into world-class software with AI-powered development. Prototypes ready in 90 hours.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
@@ -20,6 +27,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="format-detection" content="telephone=no" />
+      </head>
       <Head>
         <meta property="og:title" content="ALGENTECH | AI-Powered Software Development" />
         <meta property="og:description" content="Turn ideas into world-class software with AI-powered development. Prototypes ready in 90 hours." />

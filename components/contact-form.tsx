@@ -102,10 +102,10 @@ export function ContactForm() {
 
   if (isSuccess) {
     return (
-      <div className="text-center py-12">
-        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+      <div className="text-center py-8 sm:py-12">
+        <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
           <svg
-            className="w-8 h-8 text-primary"
+            className="w-6 h-6 sm:w-8 sm:h-8 text-primary"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -119,14 +119,14 @@ export function ContactForm() {
             />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold mb-4">Message Sent Successfully!</h3>
-        <p className="text-foreground/80 mb-8">
+        <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Message Sent Successfully!</h3>
+        <p className="text-sm sm:text-base text-foreground/80 mb-6 sm:mb-8 px-4">
           Thank you for reaching out. We'll get back to you within 24 hours.
         </p>
         <Button
           onClick={() => setIsSuccess(false)}
           variant="outline"
-          className="rounded-full"
+          className="rounded-full touch-manipulation px-6 py-2 sm:px-8 sm:py-3"
         >
           Send Another Message
         </Button>
@@ -135,10 +135,10 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <div className="space-y-2">
-          <Label htmlFor="firstName">First Name</Label>
+          <Label htmlFor="firstName" className="text-sm sm:text-base">First Name</Label>
           <Input
             id="firstName"
             name="firstName"
@@ -146,10 +146,11 @@ export function ContactForm() {
             onChange={handleChange}
             required
             placeholder="John"
+            className="text-sm sm:text-base py-2 sm:py-3 touch-manipulation"
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="lastName">Last Name</Label>
+          <Label htmlFor="lastName" className="text-sm sm:text-base">Last Name</Label>
           <Input
             id="lastName"
             name="lastName"
@@ -157,13 +158,14 @@ export function ContactForm() {
             onChange={handleChange}
             required
             placeholder="Doe"
+            className="text-sm sm:text-base py-2 sm:py-3 touch-manipulation"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email" className="text-sm sm:text-base">Email</Label>
           <Input
             id="email"
             name="email"
@@ -172,10 +174,11 @@ export function ContactForm() {
             onChange={handleChange}
             required
             placeholder="john@example.com"
+            className="text-sm sm:text-base py-2 sm:py-3 touch-manipulation"
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="phone">Phone</Label>
+          <Label htmlFor="phone" className="text-sm sm:text-base">Phone</Label>
           <Input
             id="phone"
             name="phone"
@@ -184,23 +187,25 @@ export function ContactForm() {
             onChange={handleChange}
             required
             placeholder="+1 (555) 000-0000"
+            className="text-sm sm:text-base py-2 sm:py-3 touch-manipulation"
           />
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="company">Company</Label>
+        <Label htmlFor="company" className="text-sm sm:text-base">Company</Label>
         <Input
           id="company"
           name="company"
           value={formData.company}
           onChange={handleChange}
           placeholder="Your Company Name"
+          className="text-sm sm:text-base py-2 sm:py-3 touch-manipulation"
         />
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message" className="text-sm sm:text-base">Message</Label>
         <Textarea
           id="message"
           name="message"
@@ -208,11 +213,11 @@ export function ContactForm() {
           onChange={handleChange}
           required
           placeholder="Tell us about your project..."
-          className="min-h-[150px]"
+          className="min-h-[120px] sm:min-h-[150px] text-sm sm:text-base py-2 sm:py-3 touch-manipulation resize-y"
         />
       </div>
 
-      <Button type="submit" className="w-full" disabled={isSubmitting}>
+      <Button type="submit" className="w-full py-3 sm:py-4 text-base sm:text-lg touch-manipulation" disabled={isSubmitting}>
         {isSubmitting ? "Sending..." : "Send Message"}
       </Button>
     </form>

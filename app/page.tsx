@@ -51,23 +51,23 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-20 md:pt-40 md:pb-32 overflow-hidden">
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-on-scroll" ref={heroRef}>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center animate-on-scroll px-2" ref={heroRef}>
+            <h1 className="text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight break-words">
               <TypingEffect text="Simplify Tech. Amplifying Business." speed={60} />
             </h1>
-            <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300">
+            <p className="text-lg sm:text-xl text-foreground/80 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300 px-4 sm:px-0">
               Supercharge your business with AI-powered consulting and software solutions.
             </p>
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 animate-fade-in animation-delay-500 hover:scale-105 transition-transform"
+              className="rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg animate-fade-in animation-delay-500 hover:scale-105 transition-transform w-full sm:w-auto max-w-xs sm:max-w-none mx-auto"
             >
-              <Link href="/contact">
-                Book a Discovery Call <ArrowRight className="ml-2 h-4 w-4" />
+              <Link href="/contact" className="flex items-center justify-center">
+                Book a Discovery Call <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </Button>
           </div>
@@ -75,100 +75,100 @@ export default function Home() {
       </section>
 
       {/* USP Highlights Section */}
-      <section className="py-16 bg-secondary/10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 animate-on-scroll" ref={uspRef}>
+      <section className="py-12 sm:py-16 bg-secondary/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 animate-on-scroll" ref={uspRef}>
             {/* 90-Hour Prototype USP - Now Clickable without Neuron Animations */}
             <div
               onClick={() => handleUspClick("/services/rapid-prototyping")}
-              className="bg-background border-2 border-primary rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer relative group overflow-hidden usp-card-clickable"
+              className="bg-background border-2 border-primary rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer relative group overflow-hidden usp-card-clickable touch-manipulation"
             >
               <div className="absolute inset-0 bg-primary/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-              <div className="flex items-center mb-4 relative z-10">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4 group-hover:animate-bounce">
-                  <Clock className="h-6 w-6 text-primary" />
+              <div className="flex items-center mb-3 sm:mb-4 relative z-10">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:animate-bounce flex-shrink-0">
+                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">90 Hours</h3>
+                <h3 className="text-xl sm:text-2xl font-bold">90 Hours</h3>
               </div>
-              <p className="text-foreground/80 relative z-10">Functional prototype ready in just 90 hours</p>
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowRight className="h-5 w-5 text-primary" />
+              <p className="text-sm sm:text-base text-foreground/80 relative z-10">Functional prototype ready in just 90 hours</p>
+              <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
               </div>
             </div>
 
             {/* 3x Faster Development USP */}
-            <div className="bg-background border-2 border-primary/80 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <Zap className="h-6 w-6 text-primary" />
+            <div className="bg-background border-2 border-primary/80 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                  <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">3x Faster</h3>
+                <h3 className="text-xl sm:text-2xl font-bold">3x Faster</h3>
               </div>
-              <p className="text-foreground/80">Development speed compared to traditional methods</p>
+              <p className="text-sm sm:text-base text-foreground/80">Development speed compared to traditional methods</p>
             </div>
 
             {/* 60% Fewer Bugs USP */}
-            <div className="bg-background border-2 border-primary/60 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <Shield className="h-6 w-6 text-primary" />
+            <div className="bg-background border-2 border-primary/60 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                  <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">60% Fewer</h3>
+                <h3 className="text-xl sm:text-2xl font-bold">60% Fewer</h3>
               </div>
-              <p className="text-foreground/80">Bugs than traditional development methods</p>
+              <p className="text-sm sm:text-base text-foreground/80">Bugs than traditional development methods</p>
             </div>
 
             {/* 40% Cost Savings USP */}
-            <div className="bg-background border-2 border-primary/40 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <Star className="h-6 w-6 text-primary" />
+            <div className="bg-background border-2 border-primary/40 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                  <Star className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">40% Savings</h3>
+                <h3 className="text-xl sm:text-2xl font-bold">40% Savings</h3>
               </div>
-              <p className="text-foreground/80">Lower development and maintenance costs</p>
+              <p className="text-sm sm:text-base text-foreground/80">Lower development and maintenance costs</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose ALGENTECH</h2>
-            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 animate-on-scroll">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Why Choose ALGENTECH</h2>
+            <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto px-4 sm:px-0">
               Our unique approach combines AI infrastructure with human expertise to deliver exceptional results.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-on-scroll" ref={featuresRef}>
-            <div className="bg-background p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 animate-bounce-slow">
-                <Clock className="h-6 w-6 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 animate-on-scroll" ref={featuresRef}>
+            <div className="bg-background p-6 sm:p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4 sm:mb-6 animate-bounce-slow">
+                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Rapid Prototyping</h3>
-              <p className="text-foreground/80">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Rapid Prototyping</h3>
+              <p className="text-sm sm:text-base text-foreground/80">
                 Get your prototype ready in just 90 hours. We move at startup speed to bring your ideas to life quickly.
               </p>
             </div>
 
-            <div className="bg-background p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 animate-bounce-slow animation-delay-300">
-                <Cpu className="h-6 w-6 text-primary" />
+            <div className="bg-background p-6 sm:p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4 sm:mb-6 animate-bounce-slow animation-delay-300">
+                <Cpu className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Infrastructure</h3>
-              <p className="text-foreground/80">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">AI Infrastructure</h3>
+              <p className="text-sm sm:text-base text-foreground/80">
                 Our AI-powered development process accelerates delivery while maintaining world-class quality standards.
               </p>
             </div>
 
-            <div className="bg-background p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6 animate-bounce-slow animation-delay-600">
-                <Globe className="h-6 w-6 text-primary" />
+            <div className="bg-background p-6 sm:p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4 sm:mb-6 animate-bounce-slow animation-delay-600">
+                <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Global Reach</h3>
-              <p className="text-foreground/80">
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Global Reach</h3>
+              <p className="text-sm sm:text-base text-foreground/80">
                 Based in Nepal, we serve clients worldwide with the perfect blend of technical excellence and cost
                 efficiency.
               </p>
@@ -178,79 +178,81 @@ export default function Home() {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-20 bg-secondary/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How We Compare</h2>
-            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+      <section className="py-16 sm:py-20 bg-secondary/5">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 animate-on-scroll">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">How We Compare</h2>
+            <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto px-4 sm:px-0">
               See why ALGENTECH outperforms traditional development agencies and freelancers.
             </p>
           </div>
 
           <div className="overflow-x-auto animate-on-scroll" ref={comparisonRef}>
+            <div className="min-w-[600px] sm:min-w-0">
             <Table className="w-full">
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-1/4">Features</TableHead>
+                  <TableHead className="w-1/4 text-sm sm:text-base">Features</TableHead>
                   <TableHead className="w-1/4 text-center">
                     <div className="flex flex-col items-center">
-                      <Trophy className="h-6 w-6 text-primary mb-2 animate-pulse-slow" />
-                      <span className="font-bold">ALGENTECH</span>
+                      <Trophy className="h-5 w-5 sm:h-6 sm:w-6 text-primary mb-1 sm:mb-2 animate-pulse-slow" />
+                      <span className="font-bold text-xs sm:text-sm">ALGENTECH</span>
                     </div>
                   </TableHead>
-                  <TableHead className="w-1/4 text-center">Traditional Agencies</TableHead>
-                  <TableHead className="w-1/4 text-center">Freelancers</TableHead>
+                  <TableHead className="w-1/4 text-center text-xs sm:text-sm">Traditional Agencies</TableHead>
+                  <TableHead className="w-1/4 text-center text-xs sm:text-sm">Freelancers</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Development Speed</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">Development Speed</TableCell>
                   <TableCell className="text-center">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary">
+                    <span className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-2xs sm:text-xs font-medium bg-primary/20 text-primary">
                       3x Faster
                     </span>
                   </TableCell>
-                  <TableCell className="text-center">Standard</TableCell>
-                  <TableCell className="text-center">Varies</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Standard</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Varies</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Prototype Delivery</TableCell>
-                  <TableCell className="text-center">90 Hours</TableCell>
-                  <TableCell className="text-center">2-4 Weeks</TableCell>
-                  <TableCell className="text-center">1-3 Weeks</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">Prototype Delivery</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">90 Hours</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">2-4 Weeks</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">1-3 Weeks</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">AI-Powered Development</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">AI-Powered Development</TableCell>
                   <TableCell className="text-center">
-                    <CheckCircle className="h-5 w-5 text-primary mx-auto" />
+                    <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mx-auto" />
                   </TableCell>
-                  <TableCell className="text-center">Rarely</TableCell>
-                  <TableCell className="text-center">No</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Rarely</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">No</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Quality Assurance</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">Quality Assurance</TableCell>
                   <TableCell className="text-center">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary">
+                    <span className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-2xs sm:text-xs font-medium bg-primary/20 text-primary">
                       AI + Human
                     </span>
                   </TableCell>
-                  <TableCell className="text-center">Manual Testing</TableCell>
-                  <TableCell className="text-center">Limited</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Manual Testing</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Limited</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Cost Efficiency</TableCell>
-                  <TableCell className="text-center">High</TableCell>
-                  <TableCell className="text-center">Low</TableCell>
-                  <TableCell className="text-center">Medium</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">Cost Efficiency</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">High</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Low</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Medium</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Team Size</TableCell>
-                  <TableCell className="text-center">Full Team</TableCell>
-                  <TableCell className="text-center">Large Team</TableCell>
-                  <TableCell className="text-center">Individual</TableCell>
+                  <TableCell className="font-medium text-sm sm:text-base">Team Size</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Full Team</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Large Team</TableCell>
+                  <TableCell className="text-center text-sm sm:text-base">Individual</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
+            </div>
           </div>
         </div>
       </section>
