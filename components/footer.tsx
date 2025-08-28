@@ -104,8 +104,8 @@ export function Footer() {
                 <address className="not-italic text-sm sm:text-base text-muted-foreground">
                   <p>Shantichowk, Biratnagar</p>
                   <p className="mt-1">
-                    <a href="tel:+9779804397120" className="hover:text-primary transition-colors touch-manipulation">
-                      +977 9804397120
+                    <a href="tel:+9779749916682" className="hover:text-primary transition-colors touch-manipulation">
+                      +977 9749916682
                     </a>
                   </p>
                 </address>

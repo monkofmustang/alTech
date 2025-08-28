@@ -104,8 +104,8 @@ export default function Contact() {
                         <div>
                           <p className="font-medium">Nepal</p>
                           <p className="text-foreground/80">
-                            <a href="tel:+9779804397120" className="hover:text-primary transition-colors">
-                              +977 9804397120
+                            <a href="tel:+9779749916682" className="hover:text-primary transition-colors">
+                              +977 9749916682
                             </a>
                           </p>
                         </div>
