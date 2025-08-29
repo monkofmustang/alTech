@@ -11,6 +11,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { BadgeCheck, Star, Trophy, Users2 } from "lucide-react"
 import { TypingEffect } from "@/components/typing-effect"
 import { TechStack } from "@/components/tech-stack"
+import { Parallax } from "react-scroll-parallax"
 
 export default function Home() {
   const router = useRouter()
@@ -50,18 +51,26 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
+      {/* Spacer to offset fixed navbar height (prevents hero text being hidden on mobile) */}
+      <div className="h-14 sm:h-16" aria-hidden />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
+        <Parallax speed={-20}>
+          <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
+        </Parallax>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-on-scroll px-2" ref={heroRef}>
-            <h1 className="text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight break-words">
-              <TypingEffect text="Simplify Tech. Amplifying Business." speed={60} />
-            </h1>
-            <p className="text-lg sm:text-xl text-foreground/80 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300 px-4 sm:px-0">
-              Supercharge your business with AI-powered consulting and software solutions.
-            </p>
+            <Parallax speed={10}>
+              <h1 className="text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight break-words">
+                <TypingEffect text="Simplify Tech. Amplifying Business." speed={60} />
+              </h1>
+            </Parallax>
+            <Parallax speed={5}>
+              <p className="text-lg sm:text-xl text-foreground/80 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300 px-4 sm:px-0">
+                Supercharge your business with AI-powered consulting and software solutions.
+              </p>
+            </Parallax>
             <Button
               asChild
               size="lg"
@@ -80,6 +89,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 animate-on-scroll" ref={uspRef}>
             {/* 90-Hour Prototype USP - Now Clickable without Neuron Animations */}
+            <Parallax speed={6}>
             <div
               onClick={() => handleUspClick("/services/rapid-prototyping")}
               className="bg-background border-2 border-primary rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer relative group overflow-hidden usp-card-clickable touch-manipulation"
@@ -96,8 +106,10 @@ export default function Home() {
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
               </div>
             </div>
+            </Parallax>
 
             {/* 3x Faster Development USP */}
+            <Parallax speed={3}>
             <div className="bg-background border-2 border-primary/80 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
               <div className="flex items-center mb-3 sm:mb-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
@@ -107,8 +119,10 @@ export default function Home() {
               </div>
               <p className="text-sm sm:text-base text-foreground/80">Development speed compared to traditional methods</p>
             </div>
+            </Parallax>
 
             {/* 60% Fewer Bugs USP */}
+            <Parallax speed={0}>
             <div className="bg-background border-2 border-primary/60 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
               <div className="flex items-center mb-3 sm:mb-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
@@ -118,8 +132,10 @@ export default function Home() {
               </div>
               <p className="text-sm sm:text-base text-foreground/80">Bugs than traditional development methods</p>
             </div>
+            </Parallax>
 
             {/* 40% Cost Savings USP */}
+            <Parallax speed={-3}>
             <div className="bg-background border-2 border-primary/40 rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer touch-manipulation">
               <div className="flex items-center mb-3 sm:mb-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
@@ -129,6 +145,7 @@ export default function Home() {
               </div>
               <p className="text-sm sm:text-base text-foreground/80">Lower development and maintenance costs</p>
             </div>
+            </Parallax>
           </div>
         </div>
       </section>
@@ -143,6 +160,7 @@ export default function Home() {
             </p>
           </div>
 
+          <Parallax speed={-8}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 animate-on-scroll" ref={featuresRef}>
             <div className="bg-background p-6 sm:p-8 rounded-xl border border-border/20 hover:border-primary/50 transition-colors hover:shadow-lg">
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-full flex items-center justify-center mb-4 sm:mb-6 animate-bounce-slow">
@@ -175,6 +193,7 @@ export default function Home() {
               </p>
             </div>
           </div>
+          </Parallax>
         </div>
       </section>
 
@@ -317,6 +336,7 @@ export default function Home() {
             </div>
 
             <div className="relative">
+              <Parallax speed={-10}>
               <div className="aspect-[4/3] bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center animate-float">
                 <video
                   autoPlay
@@ -328,6 +348,8 @@ export default function Home() {
                   <source src="/Website_Animation_Video_Generated.mp4" type="video/mp4" />
                 </video>
               </div>
+              </Parallax>
+              <Parallax speed={6}>
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg animate-float animation-delay-500">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
@@ -339,6 +361,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              </Parallax>
             </div>
           </div>
         </div>
@@ -532,10 +555,14 @@ export default function Home() {
       <section className="py-20 bg-primary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your idea into reality?</h2>
-            <p className="text-xl text-foreground/80 mb-8">
-              Let's discuss how our AI-powered development can bring your vision to life in record time.
-            </p>
+            <Parallax speed={8}>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to transform your idea into reality?</h2>
+            </Parallax>
+            <Parallax speed={4}>
+              <p className="text-xl text-foreground/80 mb-8">
+                Let's discuss how our AI-powered development can bring your vision to life in record time.
+              </p>
+            </Parallax>
             <Button
               asChild
               size="lg"

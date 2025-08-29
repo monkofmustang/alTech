@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { BackgroundAnimation } from "@/components/background-animation"
 import "./globals.css"
 import Head from "next/head"
+import { ParallaxProviderClient } from "@/components/providers/parallax-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -64,12 +65,14 @@ export default function RootLayout({
         
       </Head>
       <body className={`${inter.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          {/* Choose one of these background animations */}
-          <BackgroundAnimation />
-          {/* <StarField /> */}
-          {children}
-        </ThemeProvider>
+        <ParallaxProviderClient>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
+            {/* Choose one of these background animations */}
+            <BackgroundAnimation />
+            {/* <StarField /> */}
+            {children}
+          </ThemeProvider>
+        </ParallaxProviderClient>
       </body>
     </html>
   )
