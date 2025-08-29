@@ -10,6 +10,7 @@ import { ArrowRight, Clock, Globe, Cpu, Zap, Code, CheckCircle, Shield } from "l
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { BadgeCheck, Star, Trophy, Users2 } from "lucide-react"
 import { TypingEffect } from "@/components/typing-effect"
+import { TechStack } from "@/components/tech-stack"
 
 export default function Home() {
   const router = useRouter()
@@ -524,6 +525,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <TechStack />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary/10">
