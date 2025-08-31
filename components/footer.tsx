@@ -45,7 +45,7 @@ export function Footer() {
                   href="/services/ai-development"
                   className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors touch-manipulation"
                 >
-                  AI Development
+                  Managed Services
                 </Link>
               </li>
               <li>
@@ -53,7 +53,7 @@ export function Footer() {
                   href="/services/ai-consulting"
                   className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors touch-manipulation"
                 >
-                  AI Consulting
+                  IT Consulting & Advisory
                 </Link>
               </li>
               <li>
@@ -61,7 +61,7 @@ export function Footer() {
                   href="/services/rapid-prototyping"
                   className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors touch-manipulation"
                 >
-                  Rapid Prototyping
+                  AI & Cloud Transformation
                 </Link>
               </li>
               <li>
@@ -69,7 +69,7 @@ export function Footer() {
                   href="/services/custom-software"
                   className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors touch-manipulation"
                 >
-                  Custom Software
+                  Resource Augmentation
                 </Link>
               </li>
               <li>

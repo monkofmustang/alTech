@@ -38,10 +38,9 @@ export default function Services() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">Rapid Prototyping</h3>
+              <h3 className="text-2xl font-bold mb-3">AI & Cloud Transformation</h3>
               <p className="text-foreground/80 mb-6">
-                Turn your ideas into functional prototypes in just 90 hours. Our AI-accelerated development process
-                allows us to quickly build and iterate on your concept.
+                Modernize applications and infrastructure using AI and cloud-native best practices to boost agility and scale.
               </p>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-start">
@@ -65,10 +64,9 @@ export default function Services() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <Code className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">Custom Software</h3>
+              <h3 className="text-2xl font-bold mb-3">Resource Augmentation</h3>
               <p className="text-foreground/80 mb-6">
-                We build tailored software solutions that perfectly match your business needs. Our AI-powered
-                development process ensures faster delivery and higher quality.
+                Scale your teams with vetted experts to accelerate delivery, supported by AI-powered workflows and tooling.
               </p>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-start">
@@ -92,10 +90,9 @@ export default function Services() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <LightbulbIcon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">AI Consulting</h3>
+              <h3 className="text-2xl font-bold mb-3">IT Consulting & Advisory</h3>
               <p className="text-foreground/80 mb-6">
-                Strategic guidance to help your business leverage the power of artificial intelligence. We help you
-                develop and implement effective AI strategies.
+                Strategic guidance across technology and AI to assess readiness, craft roadmaps, and guide implementation.
               </p>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-start">
