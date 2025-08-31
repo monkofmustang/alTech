@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import { ArrowRight, Clock, Zap, CheckCircle, Lightbulb, Code, Repeat } from "lucide-react"
 
 export default function RapidPrototyping() {
@@ -14,16 +15,13 @@ export default function RapidPrototyping() {
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              MVP Development in <span className="text-primary">90 Hours</span>
-            </h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">AI & Cloud Transformation</h1>
             <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-              Launch faster, iterate sooner, and beat your competition to market with our AI-accelerated development
-              process.
+              Modernize your applications and infrastructure using AI and cloud-native best practices to increase agility, scalability, and speed.
             </p>
             <Button asChild size="lg" className="rounded-full px-8">
               <Link href="/contact">
-                Start Your Prototype <ArrowRight className="ml-2 h-4 w-4" />
+                Start Your Transformation <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -35,10 +33,9 @@ export default function RapidPrototyping() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Rapid Prototyping?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why AI & Cloud Transformation?</h2>
               <p className="text-lg text-foreground/80 mb-6">
-                In today's fast-paced business environment, speed to market can make the difference between success and
-                failure. Our rapid prototyping service allows you to:
+                In today's fast-paced business environment, modernization can make the difference between success and failure. Our AI & cloud transformation service allows you to:
               </p>
 
               <div className="space-y-4">
@@ -64,8 +61,8 @@ export default function RapidPrototyping() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <Zap className="h-32 w-32 text-primary/60" />
+              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden relative animate-float">
+                <Image src="/AIandcloud.png" alt="AI & Cloud Transformation" fill className="object-cover" priority />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-background p-6 rounded-xl border-2 border-primary shadow-lg">
                 <div className="flex items-center space-x-4">
@@ -73,7 +70,7 @@ export default function RapidPrototyping() {
                     <Clock className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <p className="font-bold text-lg">Prototype Ready</p>
+                    <p className="font-bold text-lg">Transformation Ready</p>
                     <p className="text-primary font-bold text-2xl">In Just 90 Hours</p>
                   </div>
                 </div>
@@ -87,9 +84,9 @@ export default function RapidPrototyping() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Rapid Prototyping Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our AI & Cloud Transformation Process</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              How we deliver a functional prototype in just 90 hours.
+              How we plan and deliver transformation in iterative, value-focused phases.
             </p>
           </div>
 
@@ -144,17 +141,16 @@ export default function RapidPrototyping() {
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">What's Included</h2>
               <p className="text-lg text-foreground/80 mb-6">
-                Our rapid prototyping service delivers everything you need to validate your idea and move forward with
-                confidence.
+                Our AI & cloud transformation service delivers everything you need to modernize your applications and infrastructure.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Functional Core Features</h3>
+                    <h3 className="font-semibold">Cloud-Native Foundation</h3>
                     <p className="text-foreground/80">
-                      We implement the most important features that demonstrate your product's value proposition.
+                      We establish scalable, secure cloud architectures and automation as the basis for modernization.
                     </p>
                   </div>
                 </div>
@@ -162,9 +158,9 @@ export default function RapidPrototyping() {
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">User Interface</h3>
+                    <h3 className="font-semibold">Application Modernization</h3>
                     <p className="text-foreground/80">
-                      A clean, intuitive interface that allows users to interact with your product effectively.
+                      Refactor and containerize services, adopt microservices where needed, and improve performance.
                     </p>
                   </div>
                 </div>
@@ -172,9 +168,9 @@ export default function RapidPrototyping() {
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Basic Backend Infrastructure</h3>
+                    <h3 className="font-semibold">MLOps & AIOps Enablement</h3>
                     <p className="text-foreground/80">
-                      Essential server-side components to support your prototype's functionality.
+                      Implement pipelines and observability to continuously deliver and monitor AI-enabled systems.
                     </p>
                   </div>
                 </div>
@@ -182,9 +178,9 @@ export default function RapidPrototyping() {
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Development Documentation</h3>
+                    <h3 className="font-semibold">Documentation</h3>
                     <p className="text-foreground/80">
-                      Clear documentation of the prototype's architecture and components for future development.
+                      Clear documentation of the target architecture, deployment, and operating model.
                     </p>
                   </div>
                 </div>
@@ -200,7 +196,7 @@ export default function RapidPrototyping() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ideal Use Cases</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              Our rapid prototyping service is perfect for:
+              Our AI & cloud transformation service is perfect for:
             </p>
           </div>
 
@@ -254,13 +250,13 @@ export default function RapidPrototyping() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to bring your idea to life?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to modernize with AI & Cloud?</h2>
             <p className="text-xl text-foreground/80 mb-8">
-              Let's build your prototype in just 90 hours and start your journey to success.
+              Let's plan your transformation and deliver business value faster.
             </p>
             <Button asChild size="lg" className="rounded-full px-8">
               <Link href="/contact">
-                Start Your Prototype <ArrowRight className="ml-2 h-4 w-4" />
+                Start Your Transformation <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

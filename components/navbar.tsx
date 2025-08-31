@@ -32,16 +32,16 @@ export function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start">
             <DropdownMenuItem asChild>
-                <Link href="/services/ai-consulting"> Software Consulting</Link>
+                <Link href="/services/ai-consulting">IT Consulting & Advisory</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/ai-development">AI Development</Link>
+                <Link href="/services/ai-development">Managed Services</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/rapid-prototyping">Rapid Prototyping</Link>
+                <Link href="/services/rapid-prototyping">AI & Cloud Transformation</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/services/custom-software">Custom Software</Link>
+                <Link href="/services/custom-software">Resource Augmentation</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/comparison">Why Choose Us</Link>
@@ -90,16 +90,16 @@ export function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start">
                 <DropdownMenuItem asChild>
-                  <Link href="/services/ai-development" onClick={() => setIsMenuOpen(false)}>AI Development</Link>
+                  <Link href="/services/ai-development" onClick={() => setIsMenuOpen(false)}>Managed Services</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/services/ai-consulting" onClick={() => setIsMenuOpen(false)}>AI Consulting</Link>
+                  <Link href="/services/ai-consulting" onClick={() => setIsMenuOpen(false)}>IT Consulting & Advisory</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/services/rapid-prototyping" onClick={() => setIsMenuOpen(false)}>Rapid Prototyping</Link>
+                  <Link href="/services/rapid-prototyping" onClick={() => setIsMenuOpen(false)}>AI & Cloud Transformation</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/services/custom-software" onClick={() => setIsMenuOpen(false)}>Custom Software</Link>
+                  <Link href="/services/custom-software" onClick={() => setIsMenuOpen(false)}>Resource Augmentation</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/comparison" onClick={() => setIsMenuOpen(false)}>Why Choose Us</Link>

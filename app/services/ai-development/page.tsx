@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import { ArrowRight, Cpu, CheckCircle, Brain, Bot, BarChart, MessageSquare, Layers } from "lucide-react"
 
 export default function AIDevelopment() {
@@ -14,7 +15,7 @@ export default function AIDevelopment() {
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Development</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Managed Services</h1>
             <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
               Cutting-edge artificial intelligence solutions to transform your business and drive innovation.
             </p>
@@ -59,8 +60,8 @@ export default function AIDevelopment() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <Brain className="h-32 w-32 text-primary/60" />
+              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden relative animate-float">
+                <Image src="/resourceManagement.png" alt="Managed Services" fill className="object-cover" priority />
               </div>
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg">
                 <div className="flex items-center space-x-4">
@@ -82,7 +83,7 @@ export default function AIDevelopment() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our AI Development Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Managed Services</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               Comprehensive AI solutions designed to transform your business operations and customer experiences.
             </p>
@@ -162,7 +163,7 @@ export default function AIDevelopment() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our AI Development Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Managed Services Process</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               A systematic approach to creating effective AI solutions that deliver real business value.
             </p>
@@ -278,7 +279,7 @@ export default function AIDevelopment() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">AI Use Cases</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Managed Services Use Cases</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               Discover how our AI solutions are transforming businesses across various industries.
             </p>

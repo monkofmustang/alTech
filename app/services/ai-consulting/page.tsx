@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 import { ArrowRight, CheckCircle, LightbulbIcon, TrendingUp, BarChart, Brain, Shield, Users } from "lucide-react"
 
 export default function AIConsulting() {
@@ -14,9 +15,9 @@ export default function AIConsulting() {
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Consulting Services</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">IT Consulting & Advisory</h1>
             <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-              Strategic guidance to help your business leverage the power of artificial intelligence.
+              Strategic guidance to help your business leverage technology and artificial intelligence effectively.
             </p>
             <Button asChild size="lg" className="rounded-full px-8">
               <Link href="/contact">
@@ -32,20 +33,19 @@ export default function AIConsulting() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform Your Business with AI</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Transform Your Business with IT Consulting & Advisory</h2>
               <p className="text-lg text-foreground/80 mb-6">
-                Our AI consulting services help businesses identify opportunities, develop strategies, and implement AI
-                solutions that drive growth, efficiency, and innovation.
+                Our IT consulting and advisory services help businesses identify opportunities, develop strategies, and implement technology and AI solutions that drive growth, efficiency, and innovation.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground/80">Expert guidance from AI specialists with industry experience</p>
+                  <p className="text-foreground/80">Expert guidance from IT specialists with industry experience</p>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground/80">Customized AI roadmaps aligned with your business goals</p>
+                  <p className="text-foreground/80">Customized IT roadmaps aligned with your business goals</p>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
@@ -53,14 +53,14 @@ export default function AIConsulting() {
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground/80">Ongoing support to ensure successful AI adoption</p>
+                  <p className="text-foreground/80">Ongoing support to ensure successful IT adoption</p>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <Brain className="h-32 w-32 text-primary/60" />
+              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden relative animate-float">
+                <Image src="/consulting.png" alt="IT Consulting & Advisory" fill className="object-cover" priority />
               </div>
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg">
                 <div className="flex items-center space-x-4">
@@ -69,7 +69,7 @@ export default function AIConsulting() {
                   </div>
                   <div>
                     <p className="font-bold">Strategic</p>
-                    <p className="text-primary font-bold">AI Guidance</p>
+                    <p className="text-primary font-bold">IT Guidance</p>
                   </div>
                 </div>
               </div>
@@ -82,9 +82,9 @@ export default function AIConsulting() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our AI Consulting Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our IT Consulting & Advisory Services</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              Comprehensive consulting services to guide your AI journey from strategy to implementation.
+              Comprehensive consulting and advisory services to guide your technology and AI journey from strategy to implementation.
             </p>
           </div>
 
@@ -93,10 +93,9 @@ export default function AIConsulting() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <LightbulbIcon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Strategy Development</h3>
+              <h3 className="text-xl font-bold mb-3">IT Strategy Development</h3>
               <p className="text-foreground/80">
-                We help you create a comprehensive AI strategy aligned with your business objectives, identifying the
-                most valuable opportunities for AI implementation.
+                We help you create a comprehensive IT strategy aligned with your business objectives, identifying the most valuable opportunities for technology and AI implementation.
               </p>
             </div>
 
@@ -104,10 +103,9 @@ export default function AIConsulting() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Readiness Assessment</h3>
+              <h3 className="text-xl font-bold mb-3">IT Readiness Assessment</h3>
               <p className="text-foreground/80">
-                We evaluate your organization's data, infrastructure, and processes to determine your readiness for AI
-                adoption and identify areas for improvement.
+                We evaluate your organization's data, infrastructure, and processes to determine your readiness for technology and AI adoption and identify areas for improvement.
               </p>
             </div>
 
@@ -117,8 +115,7 @@ export default function AIConsulting() {
               </div>
               <h3 className="text-xl font-bold mb-3">Data Strategy & Management</h3>
               <p className="text-foreground/80">
-                We help you develop a robust data strategy, ensuring you have the right data infrastructure and
-                governance to support successful AI initiatives.
+                We help you develop a robust data strategy, ensuring you have the right data infrastructure and governance to support successful technology and AI initiatives.
               </p>
             </div>
 
@@ -126,10 +123,9 @@ export default function AIConsulting() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <Brain className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Solution Selection</h3>
+              <h3 className="text-xl font-bold mb-3">Technology Solution Selection</h3>
               <p className="text-foreground/80">
-                We guide you through the complex landscape of AI technologies and vendors, helping you select the right
-                solutions for your specific needs.
+                We guide you through the complex landscape of technology and vendors, helping you select the right solutions for your specific needs.
               </p>
             </div>
 
@@ -137,10 +133,9 @@ export default function AIConsulting() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Change Management</h3>
+              <h3 className="text-xl font-bold mb-3">Change Management</h3>
               <p className="text-foreground/80">
-                We help your organization navigate the cultural and operational changes required for successful AI
-                adoption, ensuring buy-in at all levels.
+                We help your organization navigate the cultural and operational changes required for successful technology and AI adoption, ensuring buy-in at all levels.
               </p>
             </div>
 
@@ -148,10 +143,9 @@ export default function AIConsulting() {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">AI Ethics & Governance</h3>
+              <h3 className="text-xl font-bold mb-3">IT Ethics & Governance</h3>
               <p className="text-foreground/80">
-                We help you develop ethical AI practices and governance frameworks to ensure responsible and compliant
-                use of artificial intelligence.
+                We help you develop ethical IT practices and governance frameworks to ensure responsible and compliant use of technology and artificial intelligence.
               </p>
             </div>
           </div>
@@ -164,7 +158,7 @@ export default function AIConsulting() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Consulting Process</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              A structured approach to help you successfully integrate AI into your business.
+              A structured approach to help you successfully integrate technology and AI into your business.
             </p>
           </div>
 
@@ -180,8 +174,7 @@ export default function AIConsulting() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-foreground/80">
-                  We begin by understanding your business, challenges, goals, and current capabilities through in-depth
-                  discussions and analysis of your operations.
+                  We begin by understanding your business, challenges, goals, and current capabilities through in-depth discussions and analysis of your operations.
                 </p>
               </div>
             </div>
@@ -197,8 +190,7 @@ export default function AIConsulting() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-foreground/80">
-                  We evaluate your organization's AI readiness, including data infrastructure, technical capabilities,
-                  and organizational culture.
+                  We evaluate your organization's technology and AI readiness, including data infrastructure, technical capabilities, and organizational culture.
                 </p>
               </div>
             </div>
@@ -214,8 +206,7 @@ export default function AIConsulting() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-foreground/80">
-                  We create a customized AI roadmap that outlines specific initiatives, technologies, and implementation
-                  timelines aligned with your business objectives.
+                  We create a customized IT roadmap that outlines specific initiatives, technologies, and implementation timelines aligned with your business objectives.
                 </p>
               </div>
             </div>
@@ -231,8 +222,7 @@ export default function AIConsulting() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-foreground/80">
-                  We develop detailed plans for implementing AI solutions, including resource requirements, technology
-                  selection, and change management strategies.
+                  We develop detailed plans for implementing technology and AI solutions, including resource requirements, technology selection, and change management strategies.
                 </p>
               </div>
             </div>
@@ -248,8 +238,7 @@ export default function AIConsulting() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-foreground/80">
-                  We provide ongoing guidance and support throughout your AI journey, helping you navigate challenges,
-                  measure results, and adapt your strategy as needed.
+                  We provide ongoing guidance and support throughout your technology and AI journey, helping you navigate challenges, measure results, and adapt your strategy as needed.
                 </p>
               </div>
             </div>
@@ -261,9 +250,9 @@ export default function AIConsulting() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefits of AI Consulting</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Benefits of IT Consulting & Advisory</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              How our AI consulting services can transform your business.
+              How our IT consulting and advisory services can transform your business.
             </p>
           </div>
 

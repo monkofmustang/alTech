@@ -2,7 +2,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Code, CheckCircle, Layers, Shield, Zap, Globe, Cpu } from "lucide-react"
+import Image from "next/image"
+import { ArrowRight, Code, CheckCircle, Users, Layers, Shield, Zap, Globe, Cpu } from "lucide-react"
 
 export default function CustomSoftware() {
   return (
@@ -14,7 +15,7 @@ export default function CustomSoftware() {
         <div className="glow left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Custom Software Development</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Resource Augmentation</h1>
             <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
               Tailored software solutions built with AI-powered development for exceptional quality and speed.
             </p>
@@ -32,7 +33,7 @@ export default function CustomSoftware() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Custom Software That Drives Results</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Resource Augmentation That Drives Results</h2>
               <p className="text-lg text-foreground/80 mb-6">
                 At ALTENTECH, we build software that's perfectly aligned with your business goals and processes. Our
                 AI-powered development approach delivers solutions that are:
@@ -59,13 +60,13 @@ export default function CustomSoftware() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <Code className="h-32 w-32 text-primary/60" />
+              <div className="aspect-square bg-primary/20 rounded-2xl overflow-hidden relative animate-float">
+                <Image src="/resourceaugment.png" alt="Resource Augmentation" fill className="object-cover" priority />
               </div>
               <div className="absolute -bottom-8 -right-8 bg-background p-6 rounded-xl border border-border/20 shadow-lg">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                    <Zap className="h-6 w-6 text-primary" />
+                    <Users className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-bold">AI-Powered</p>
@@ -82,7 +83,7 @@ export default function CustomSoftware() {
       <section className="py-20 bg-secondary/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Custom Software Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Resource Augmentation Services</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               Comprehensive software development services for all your business needs.
             </p>
@@ -156,7 +157,7 @@ export default function CustomSoftware() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Development Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Augmentation Process</h2>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               A streamlined, AI-enhanced approach to delivering exceptional software.
             </p>
@@ -320,13 +321,13 @@ export default function CustomSoftware() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to build your custom software solution?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to scale with Resource Augmentation?</h2>
             <p className="text-xl text-foreground/80 mb-8">
-              Let's discuss how our AI-powered development can transform your business.
+              Let's discuss how our AI-powered teams can accelerate your delivery.
             </p>
             <Button asChild size="lg" className="rounded-full px-8">
               <Link href="/contact">
-                Start Your Project <ArrowRight className="ml-2 h-4 w-4" />
+                Talk to an Expert <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-on-scroll px-2" ref={heroRef}>
             <h1 className="text-xl xs:text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight break-words">
-              <TypingEffect text="Simplify Tech. Amplifying Business." speed={60} />
+              <TypingEffect text="Simplify Tech. Amplify Business." speed={60} />
             </h1>
             <p className="text-lg sm:text-xl text-foreground/80 mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in animation-delay-300 px-4 sm:px-0">
               Supercharge your business with AI-powered consulting and software solutions.
